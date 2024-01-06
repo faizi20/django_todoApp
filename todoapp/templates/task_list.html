@@ -1,21 +1,17 @@
-{% extends "base.html" %} 
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
 <div class="todo-container">
+  <h1>TODO APP</h1>
   <div class="todo-search">
     <form action="" method="POST">
-     
-      {% comment %} <input type="text" placeholder="Enter Todo" /> {% endcomment %}
+      {% comment %} <input type="text" placeholder="Enter Todo" /> {% endcomment %} 
       {% csrf_token %}
-      {{form.title}}
+       {{form.title}}
       <button>Add</button>
     </form>
   </div>
 
   <div class="todo-list">
-    
-    
     {% for task in tasks %}
 
     <div class="todo-list-item">
@@ -37,18 +33,8 @@
         </div>
       </div>
     </div>
-      
+
     {% endfor %}
-      
-   
-
-
-
-
-
-   
-
- 
   </div>
 </div>
 

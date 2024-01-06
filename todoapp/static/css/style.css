@@ -109,7 +109,7 @@ select:focus {
 
 .todo-list-item .btn-container {
   display: flex;
-  margin-top: 20px;
+  margin-top: 0;
 }
 .todo-list-item .edit {
   margin-right: 10px;
@@ -165,4 +165,10 @@ select:focus {
   border-radius: 5px;
   cursor: pointer;
   margin-left: 10px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
 }
